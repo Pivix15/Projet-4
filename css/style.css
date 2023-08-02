@@ -18,6 +18,10 @@
     text-decoration: none;
 }
 
+.backg-color {
+    background-color: #F6F6F6;
+}
+
 .flexbox {
     display: flex;
 }
@@ -38,45 +42,6 @@ header img {
     height: 36px;
 }
 
-/***** Main *****/
-#lieu {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 17px;
-    background: #EAEAEA;
-}
-#lieu p,i {
-    color: #353535;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#explore {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F6F6F6;
-}
-
-#explore h1,
-#explore p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#explore h1 {
-    font-size: 23px;
-    margin: 0px 40px 20px 40px;
-}
-
-#explore p {
-    font-size: 18px;
-}
-
 /***** Bouton *****/
 .button {
     height: 50px;
@@ -89,7 +54,6 @@ header img {
     overflow: hidden;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px #00000040;
-
 }
 .button div {
     height: 100%;
@@ -105,9 +69,9 @@ header img {
     color: #FFF;
 }
 
-/***** Button (Animation) *****/
+/***** Bouton (Animation) *****/
 .button {
-    transition: box-shadow 0.1s linear 0s;
+    transition: box-shadow 0.2s linear 0s;
 }
   
 .button:hover {
@@ -115,7 +79,7 @@ header img {
 }
 
 .button div {
-    transition: opacity 0.1s linear 0s;
+    transition: opacity 0.2s linear 0s;
 }
 
 .button:hover div {
