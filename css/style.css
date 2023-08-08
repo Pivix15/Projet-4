@@ -55,6 +55,7 @@ header img {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px #00000040;
 }
+
 .button div {
     height: 100%;
     width: 100%;
@@ -63,6 +64,7 @@ header img {
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.25);
 }
+
 .button span {
     z-index: 1;
     font-size: 16px;
@@ -73,7 +75,7 @@ header img {
 .button {
     transition: box-shadow 0.2s linear 0s;
 }
-  
+
 .button:hover {
     box-shadow: 0px 4px 12px 2px #00000040;
 }
@@ -84,4 +86,44 @@ header img {
 
 .button:hover div {
     opacity: 1;
+}
+
+footer {
+    background: var(--grey, #353535);
+    padding: 22px 25px 22px 25px;
+}
+
+.footer p {
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 16px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.fa-utensils {
+    color: var(--white, #FFF);
+    width: 11px;
+    height: 13px;
+}
+
+.fa-hands-helping {
+    color: var(--white, #FFF);
+    width: 11.918px;
+    height: 13px;
+    font-size: small;
+}
+
+footer .footer-icons {
+    gap: 11px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
