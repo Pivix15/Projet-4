@@ -88,12 +88,13 @@ header img {
     opacity: 1;
 }
 
+/***** Footer *****/
 footer {
     background: var(--grey, #353535);
     padding: 22px 25px 22px 25px;
 }
 
-.footer p {
+footer p {
     color: white;
 }
 

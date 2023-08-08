@@ -137,3 +137,15 @@
     font-size: 22px;
 }
 
+.new {
+    position: absolute;
+    left: 251px;
+    top: 15px;
+    width: 61.37px;
+    background: var(--green, #99E2D0);
+    color: var(--green-font, #008766);
+    padding: 9px;
+    border-radius: 2px;
+    font-weight: 500;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
