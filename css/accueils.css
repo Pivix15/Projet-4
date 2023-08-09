@@ -122,7 +122,7 @@
     margin: 0px 17px 0px 17px;
 }
 
-.restaurants article div {
+.titre {
     padding-left: 13px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -130,12 +130,6 @@
     border-radius: 0px 0px 15px 15px;
 }
 
-.fa-heart {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    font-size: 22px;
-}
 
 .new {
     position: absolute;

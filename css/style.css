@@ -88,6 +88,32 @@ header img {
     opacity: 1;
 }
 
+/***** Coeur *****/
+
+.heart-box i {
+    position: relative;
+    bottom: 25px;
+    right: 25px;
+    font-size: 22px;
+}
+
+.heart-box .far {
+    position: absolute;
+}
+
+.heart-box .fas {
+    position: absolute;
+    background: linear-gradient(40deg, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+/***** Coeur (Animation) *****/
+.heart-box .fas:hover {
+    opacity: 1;
+}
+
 /***** Footer *****/
 footer {
     background: var(--grey, #353535);
