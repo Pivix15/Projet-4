@@ -42,6 +42,8 @@
     align-items: center;
     padding-top: 48px;
     padding-bottom: 68px;
+    margin-left: 42px;
+    margin-right: 30px;
 }
 
 .fonction_content {
@@ -51,7 +53,7 @@
 
 .fonction_content > h2 {
     position: relative;
-    left: -25px;
+    left: -20px;
 }
 
 .fonction_content > div {
@@ -64,16 +66,13 @@
 }
 
 .fonction_content > div > div {
-    align-items: center;
     border-radius: 20px;
     background: #F6F6F6;
     box-shadow: 0px 4px 15px 0px #00000026;
     align-items: center;
-    max-width: 323px;
     width: 100%;
     padding-right: 15px;
     height: 72px;
-    position: relative;
     font-weight: bold;
     gap: 15px;
 }
