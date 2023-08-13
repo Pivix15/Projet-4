@@ -37,7 +37,7 @@ header {
     background-color: white;
 }
 
-header img {
+header > img {
     width: 197px;
     height: 36px;
 }
@@ -109,6 +109,7 @@ header img {
     color: transparent;
     opacity: 0;
 }
+
 /***** Coeur (Animation) *****/
 .heart-box .fas:hover {
     opacity: 1;
