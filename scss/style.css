@@ -43,7 +43,7 @@
 
 .heart-box i {
   right: 24px;
-  top: -28px;
+  top: -30px;
 }
 
 h1 {
@@ -57,9 +57,41 @@ h1 {
   top: -60px;
   border-radius: 15px;
   background-color: var(--light-gray-color);
+  width: 100%;
+  padding: 20px 0px 40px 0px;
 }
 .main__titre {
-  padding: 17px;
+  padding-left: 17px;
+}
+.main__entry {
+  margin-top: 40px;
+  margin-left: 13px;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main__entry h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--tertiary-color);
+  width: 40px;
+  padding-bottom: 5px;
+}
+.main__article {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.main__article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__article > div p:nth-child(2) {
+  font-weight: bold;
 }
 
 /***** Coeur *****/

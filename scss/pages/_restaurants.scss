@@ -6,7 +6,7 @@
 
 .heart-box i {
     right: 24px;
-    top: -28px;
+    top: -30px;
 }
 
 h1 {
@@ -20,7 +20,39 @@ h1 {
     top: -60px;
     border-radius: 15px;
     background-color: var(--light-gray-color);
+    width: 100%;
+    padding: 20px 0px 40px 0px;
     &__titre {
-        padding: 17px;
+        padding-left: 17px;
+    }
+    &__entry {
+        margin-top: 40px;
+        margin-left: 13px;
+        margin-right: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        h2 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300; 
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--tertiary-color);
+            width: 40px;
+            padding-bottom: 5px;
+        }
+    }
+    &__article {
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p:nth-child(2) {
+                font-weight: bold;
+            }
+        }
     }
 }
