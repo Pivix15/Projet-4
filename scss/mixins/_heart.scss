@@ -1,0 +1,22 @@
+/***** Coeur *****/
+
+.heart-box {
+    position: relative;
+    /* bottom: 25px;
+    right: 25px; */
+    font-size: 22px;
+    .far {
+        position: absolute;
+    }
+    .fas {
+        position: absolute;
+        background: linear-gradient(40deg, #FF79DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+    }
+    .fas:hover {
+        opacity: 1;
+    }
+}
