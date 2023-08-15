@@ -208,6 +208,7 @@ h1 {
 }
 .main__article > div:nth-child(2) > p {
   margin-top: 23px;
+  font-weight: bold;
 }
 .main__article > div:nth-child(2) .card--add {
   position: absolute;
