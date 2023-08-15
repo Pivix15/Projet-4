@@ -13,6 +13,40 @@
   --light-gray-color: #F6F6F6;
 }
 
+footer {
+  background: var(--grey, #353535);
+  padding: 22px 25px 22px 25px;
+}
+footer h2 {
+  margin-bottom: 16px;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+footer .fa-utensils {
+  color: var(--white, #FFF);
+  width: 11px;
+  height: 13px;
+}
+footer .fa-hands-helping {
+  color: var(--white, #FFF);
+  width: 11.918px;
+  height: 13px;
+  font-size: small;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer li a {
+  color: white;
+  gap: 11px;
+  display: flex;
+}
+
 .navbar {
   width: 100%;
   padding-top: 14px;
@@ -54,7 +88,7 @@ h1 {
 
 .main {
   position: relative;
-  top: -60px;
+  margin-top: -57px;
   border-radius: 15px;
   background-color: var(--light-gray-color);
   width: 100%;

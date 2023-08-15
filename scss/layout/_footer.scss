@@ -1,0 +1,33 @@
+footer {
+    background: var(--grey, #353535);
+    padding: 22px 25px 22px 25px;
+    h2 {
+        margin-bottom: 16px;
+        font-family: 'Shrikhand', cursive;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+    }
+    .fa-utensils {
+        color: var(--white, #FFF);
+        width: 11px;
+        height: 13px;
+    }
+    .fa-hands-helping {
+        color: var(--white, #FFF);
+        width: 11.918px;
+        height: 13px;
+        font-size: small;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    li a {
+        color: white;
+        gap: 11px;
+        display: flex;
+    }
+}
