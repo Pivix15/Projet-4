@@ -46,18 +46,53 @@ h1 {
         background-color: $white-color;
         padding: 15px;
         border-radius: 15px;
-        > div {
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+        > div:nth-child(1) {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            p:nth-child(1) {
+            flex-direction: column;
+            overflow: hidden;
+            p,h3 {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            p:nth-child(2) {
-                font-weight: bold;
+        }
+        > div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            transition: 0.5s ease-in-out;
+            > p {
+                margin-top: 23px;
             }
+            .card--add {
+                position: absolute;
+                height: 100%;
+                background-color: $tertiary-color;
+                display: flex;
+                justify-content: center;
+                top: 0;
+                right: 0;
+                border-radius: 0 15px 15px 0;
+                font-size: 1.2rem;
+            }
+            i {
+                color: white;
+                transition: 0.5s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                width: 0;
+            }
+        }
+        &:hover .card--add i {
+            width: 59px;
+            opacity: 1;
+        }
+        &:hover div:nth-child(2) {
+            margin-right: 60px;
         }
     }
     > .btn {

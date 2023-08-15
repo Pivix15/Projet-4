@@ -143,19 +143,54 @@ h1 {
   background-color: #fff;
   padding: 15px;
   border-radius: 15px;
-}
-.main__article > div {
-  display: flex;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
+  display: flex;
 }
-.main__article > div p:nth-child(1) {
+.main__article > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main__article > div:nth-child(1) p, .main__article > div:nth-child(1) h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main__article > div p:nth-child(2) {
-  font-weight: bold;
+.main__article > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.main__article > div:nth-child(2) > p {
+  margin-top: 23px;
+}
+.main__article > div:nth-child(2) .card--add {
+  position: absolute;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 15px 0;
+  font-size: 1.2rem;
+}
+.main__article > div:nth-child(2) i {
+  color: white;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 0;
+}
+.main__article:hover .card--add i {
+  width: 59px;
+  opacity: 1;
+}
+.main__article:hover div:nth-child(2) {
+  margin-right: 60px;
 }
 .main > .btn {
   margin-top: 40px;
