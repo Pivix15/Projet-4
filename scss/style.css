@@ -93,6 +93,50 @@ footer li a {
   opacity: 1;
 }
 
+.main__article:nth-child(2) {
+  animation: fadeIn1 1s forwards;
+}
+
+.main__article:nth-child(3) {
+  animation: fadeIn2 2s forwards;
+  overflow: hidden;
+}
+
+.main__article:nth-child(4) {
+  animation: fadeIn3 3s forwards;
+  overflow: hidden;
+}
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    transform: translateY(10%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translateY(30%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeIn3 {
+  from {
+    opacity: 0;
+    transform: translateY(40%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 #template img {
   width: 100%;
   height: 275px;
@@ -177,7 +221,7 @@ h1 {
   font-size: 1.2rem;
 }
 .main__article > div:nth-child(2) i {
-  color: white;
+  color: #fff;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
