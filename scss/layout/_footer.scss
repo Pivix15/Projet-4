@@ -1,20 +1,20 @@
 footer {
-    background: var(--grey, #353535);
+    background: $gray-color;
     padding: 22px 25px 22px 25px;
     h2 {
         margin-bottom: 16px;
         font-family: 'Shrikhand', cursive;
         font-size: 18px;
         font-weight: 400;
-        color: white;
+        color: $white-color;
     }
     .fa-utensils {
-        color: var(--white, #FFF);
+        color: $white-color;
         width: 11px;
         height: 13px;
     }
     .fa-hands-helping {
-        color: var(--white, #FFF);
+        color: $white-color;
         width: 11.918px;
         height: 13px;
         font-size: small;
@@ -26,7 +26,7 @@ footer {
         gap: 7px;
     }
     li a {
-        color: white;
+        color: $white-color;
         gap: 11px;
         display: flex;
     }

@@ -6,9 +6,10 @@
     text-decoration: none;
 }
 
-:root {
-    --primair-color: #9356DC;
-    --second-color: #FF79DA;
-    --tertiary-color: #99E2D0;
-    --light-gray-color: #F6F6F6;
-}
+
+    $primair-color: #9356DC;
+    $second-color: #FF79DA;
+    $tertiary-color: #99E2D0;
+    $light-gray-color: #F6F6F6;
+    $white-color: #fff;
+    $gray-color: #353535;
