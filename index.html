@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/accueils.css">
+    <link rel="stylesheet" href="./scss/style.css">
 
     <!-- Google Fonts -->
     <style>
@@ -23,8 +22,12 @@
 </head>
 
 <body>
-    <header class="flexbox">
-        <img src="./images/ohmyfood.png" alt="Logo ohmyfood">
+    <header>
+        <div class="navbar box-shadow">
+            <div>
+                <img src="../images/ohmyfood.png" alt="Logo ohmyfood">
+            </div>
+        </div>
     </header>
     <section>
         <div id="lieu">
@@ -36,10 +39,7 @@
         <div id="explore">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a href="#" class="button flexbox">
-                <div></div>
-                <span>Explorer nos restaurants</span>
-            </a>
+            <a href="#" class="btn-explor">Explorer nos restaurants</a>
         </div>
     </section>
     <section id="fonction">
@@ -73,7 +73,7 @@
     <main class="backg-color">
         <section class="restaurants">
             <h2>Restaurants</h2>
-            <article class="restaurant_content">
+            <article class="restaurants_content">
                 <a href="./pages/palette-du-gout.html">
                     <span class="new">Nouveau</span>
                     <img src="./images/LaPaletteDuGout.jpg" alt="La palette du gout">
@@ -87,7 +87,7 @@
                     <i class="fas fa-heart"></i>
                 </div>
             </article>
-            <article class="restaurant_content">
+            <article class="restaurants_content">
                 <a href="./pages/la-note-enchantee.html">
                     <span class="new">Nouveau</span>
                     <img src="./images/LaNoteEnchantees.jpg" alt="La note enchantée">
@@ -101,7 +101,7 @@
                     <i class="fas fa-heart"></i>
                 </div>
             </article>
-            <article class="restaurant_content">
+            <article class="restaurants_content">
                 <a href="./pages/a-la-francaise.html">
                     <img src="./images/ALaFrancaise.jpg" alt="A la française">
                     <div class="titre">
@@ -114,7 +114,7 @@
                     <i class="fas fa-heart"></i>
                 </div>
             </article>
-            <article class="restaurant_content">
+            <article class="restaurants_content">
                 <a href="./pages/delice-des-sens.html">
                     <img src="./images/LeDeliceDesSens.jpg" alt="Le délice des sens">
                     <div class="titre">

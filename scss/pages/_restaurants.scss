@@ -4,17 +4,6 @@
     object-fit: cover;
 }
 
-.heart-box i {
-    right: 24px;
-    top: -30px;
-}
-
-h1 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 28px;
-    font-weight: 400;
-}
-
 .main {
     position: relative;
     margin-top: -57px;
@@ -24,6 +13,15 @@ h1 {
     padding: 20px 0px 40px 0px;
     &__titre {
         padding-left: 17px;
+        .heart-box i {
+            right: 24px;
+            top: -30px;
+        }
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 28px;
+            font-weight: 400;
+        }
     }
     &__menu {
         margin-top: 40px;
