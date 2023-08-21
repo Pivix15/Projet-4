@@ -133,22 +133,6 @@ footer li a {
 .main__article:nth-child(2) {
   animation: fadeIn1 1s forwards;
 }
-
-.main__article:nth-child(3) {
-  animation: fadeIn2 1.5s forwards;
-  overflow: hidden;
-}
-
-.main__article:nth-child(4) {
-  animation: fadeIn3 2s forwards;
-  overflow: hidden;
-}
-
-.main__article:nth-child(5) {
-  animation: fadeIn4 2.5s forwards;
-  overflow: hidden;
-}
-
 @keyframes fadeIn1 {
   from {
     opacity: 0;
@@ -158,6 +142,11 @@ footer li a {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+
+.main__article:nth-child(3) {
+  animation: fadeIn2 1.5s forwards;
+  overflow: hidden;
 }
 @keyframes fadeIn2 {
   from {
@@ -169,6 +158,11 @@ footer li a {
     transform: translateY(0) scale(1);
   }
 }
+
+.main__article:nth-child(4) {
+  animation: fadeIn3 2s forwards;
+  overflow: hidden;
+}
 @keyframes fadeIn3 {
   from {
     opacity: 0;
@@ -178,6 +172,11 @@ footer li a {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+
+.main__article:nth-child(5) {
+  animation: fadeIn4 2.5s forwards;
+  overflow: hidden;
 }
 @keyframes fadeIn4 {
   from {
@@ -189,6 +188,7 @@ footer li a {
     transform: translateY(0) scale(1);
   }
 }
+
 #lieu {
   height: 50px;
   display: flex;
@@ -338,6 +338,7 @@ footer li a {
 
 #loading {
   background-color: #000;
+  cursor: none;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -350,22 +351,6 @@ footer li a {
   animation: loading-disparition 2.5s linear 0s 1;
   -webkit-animation: loading-disparition 2.5s linear 0s 1;
 }
-#loading div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-#loading div i {
-  height: 100%;
-  width: 100%;
-  color: #FF79DA;
-  text-shadow: 0 0 20px #9356DC;
-  font-size: 64px;
-  padding: 50px;
-  animation: loading-rotation 2.5s linear 0s 1;
-  -webkit-animation: loading-rotation 2.5s linear 0s 1;
-}
-
 @keyframes loading-disparition {
   0% {
     visibility: visible;
@@ -382,6 +367,21 @@ footer li a {
     opacity: 0;
   }
 }
+#loading div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#loading div i {
+  height: 100%;
+  width: 100%;
+  color: #FF79DA;
+  text-shadow: 0 0 20px #9356DC;
+  font-size: 64px;
+  padding: 50px;
+  animation: loading-rotation 2.5s linear 0s 1;
+  -webkit-animation: loading-rotation 2.5s linear 0s 1;
+}
 @keyframes loading-rotation {
   0% {
     transform: rotateY(0deg);
@@ -390,6 +390,7 @@ footer li a {
     transform: rotateY(360deg);
   }
 }
+
 #template img {
   width: 100%;
   height: 275px;
@@ -516,7 +517,6 @@ footer li a {
   opacity: 1;
   animation: progress-heart-fadeIn 1.5s forwards;
 }
-
 @keyframes progress-heart-fadeIn {
   0% {
     transform: scale(0.1);
