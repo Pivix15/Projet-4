@@ -143,3 +143,59 @@
 .flexbox {
     display: flex;
 }
+
+#loading {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 888;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    animation: loading-disparition 2.5s linear 0s 1;
+    -webkit-animation: loading-disparition 2.5s linear 0s 1;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        i {
+            height: 100%;
+            width: 100%;
+            color: #FF79DA;
+            text-shadow: 0 0 20px #9356DC;
+            font-size: 64px;
+            padding: 50px;
+            animation: loading-rotation 2.5s linear 0s 1;
+            -webkit-animation: loading-rotation 2.5s linear 0s 1;
+        }
+    }
+}
+  
+@keyframes loading-disparition {
+    0% {
+        visibility: visible;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    95% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+  
+@keyframes loading-rotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
