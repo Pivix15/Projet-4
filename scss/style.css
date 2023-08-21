@@ -454,7 +454,34 @@ footer li a {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  transform: scale(1.5);
+  animation: progress-heart-fadeOut 1.5s forwards;
+  transition: opacity 0.5s;
 }
-.heart-box .fas:hover {
+.heart-box:hover .fas {
   opacity: 1;
+  animation: progress-heart-fadeIn 1.5s forwards;
+}
+
+@keyframes progress-heart-fadeIn {
+  0% {
+    transform: scale(0.1);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes progress-heart-fadeOut {
+  0% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.1);
+  }
 }/*# sourceMappingURL=style.css.map */
