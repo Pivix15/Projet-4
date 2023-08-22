@@ -20,28 +20,29 @@
     &:hover .fas {
         opacity: 1;
         animation: progress-heart-fadeIn 1.5s forwards;
-        @keyframes progress-heart-fadeIn {
-            0% {
-                transform: scale(.1);
-            }
-            70% {
-                transform: scale(1.5);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-        @keyframes progress-heart-fadeOut {
-            0% {
-                transform: scale(1.5);
-            }
-            70% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(.1);
-            }
-        }
+    }
+}
+
+@keyframes progress-heart-fadeIn {
+    0% {
+        transform: scale(.1);
+    }
+    70% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes progress-heart-fadeOut {
+    0% {
+        transform: scale(1.5);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(.1);
     }
 }
 

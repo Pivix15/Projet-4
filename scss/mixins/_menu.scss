@@ -1,58 +1,59 @@
 .main__article:nth-child(2) {
     animation: fadeIn1 1s forwards;
-    @keyframes fadeIn1 {
-        from {
-            opacity: 0;
-            transform: translateY(10%) scale(0.5);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-    }
 }
 
 .main__article:nth-child(3) {
     animation: fadeIn2 1.5s forwards;
     overflow: hidden;
-    @keyframes fadeIn2 {
-        from {
-            opacity: 0;
-            transform: translateY(30%) scale(0.5);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-    }
 }
 
 .main__article:nth-child(4) {
     animation: fadeIn3 2s forwards;
     overflow: hidden;
-    @keyframes fadeIn3 {
-        from {
-            opacity: 0;
-            transform: translateY(40%) scale(0.5);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-    }
 }
 
 .main__article:nth-child(5) {
     animation: fadeIn4 2.5s forwards;
     overflow: hidden;
-    @keyframes fadeIn4 {
-        from {
-            opacity: 0;
-            transform: translateY(45%) scale(0.5);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
+}
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translateY(10%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(30%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes fadeIn3 {
+    from {
+        opacity: 0;
+        transform: translateY(40%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes fadeIn4 {
+    from {
+        opacity: 0;
+        transform: translateY(45%) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }

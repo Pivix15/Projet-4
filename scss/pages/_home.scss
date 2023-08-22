@@ -167,23 +167,6 @@ hr {
     align-items: center;
     visibility: hidden;
     animation: loading-disparition 2.5s linear 0s 1;
-    -webkit-animation: loading-disparition 2.5s linear 0s 1;
-    @keyframes loading-disparition {
-        0% {
-            visibility: visible;
-        }
-        90% {
-            opacity: 0.9;
-        }
-        95% {
-            visibility: hidden;
-            opacity: 0;
-        }
-        100% {
-            visibility: hidden;
-            opacity: 0;
-        }
-    }
     div {
         display: flex;
         flex-direction: row;
@@ -206,6 +189,23 @@ hr {
                 }
             }
         }
+    }
+}
+
+@keyframes loading-disparition {
+    0% {
+        visibility: visible;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    95% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
