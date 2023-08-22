@@ -179,15 +179,6 @@ hr {
             font-size: 64px;
             padding: 50px;
             animation: loading-rotation 2.5s linear 0s 1;
-            -webkit-animation: loading-rotation 2.5s linear 0s 1;
-            @keyframes loading-rotation {
-                0% {
-                    transform: rotateY(0deg);
-                }
-                100% {
-                    transform: rotateY(360deg);
-                }
-            }
         }
     }
 }
@@ -206,6 +197,14 @@ hr {
     100% {
         visibility: hidden;
         opacity: 0;
+    }
+}
+@keyframes loading-rotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
