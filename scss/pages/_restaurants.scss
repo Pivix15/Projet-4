@@ -7,7 +7,7 @@
 .main {
     position: relative;
     margin-top: -57px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
     background-color: $light-gray-color;
     width: 100%;
     padding: 20px 0px 40px 0px;
@@ -105,9 +105,10 @@
         height: 600px;
     }
     .main {
-        margin-right: 192px;
-        margin-left: 193px;
         width: auto;
+        max-width: 1055px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +119,7 @@
             }
         }
         &__article {
-            width: 600px;
+            width: 634px;
             overflow: hidden;
         }
     }

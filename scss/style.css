@@ -151,6 +151,22 @@ footer li a {
 .main__article:nth-child(2) {
   animation: fadeIn1 1s forwards;
 }
+
+.main__article:nth-child(3) {
+  animation: fadeIn2 1.5s forwards;
+  overflow: hidden;
+}
+
+.main__article:nth-child(4) {
+  animation: fadeIn3 2s forwards;
+  overflow: hidden;
+}
+
+.main__article:nth-child(5) {
+  animation: fadeIn4 2.5s forwards;
+  overflow: hidden;
+}
+
 @keyframes fadeIn1 {
   from {
     opacity: 0;
@@ -160,11 +176,6 @@ footer li a {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
-
-.main__article:nth-child(3) {
-  animation: fadeIn2 1.5s forwards;
-  overflow: hidden;
 }
 @keyframes fadeIn2 {
   from {
@@ -176,11 +187,6 @@ footer li a {
     transform: translateY(0) scale(1);
   }
 }
-
-.main__article:nth-child(4) {
-  animation: fadeIn3 2s forwards;
-  overflow: hidden;
-}
 @keyframes fadeIn3 {
   from {
     opacity: 0;
@@ -190,11 +196,6 @@ footer li a {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
-
-.main__article:nth-child(5) {
-  animation: fadeIn4 2.5s forwards;
-  overflow: hidden;
 }
 @keyframes fadeIn4 {
   from {
@@ -206,7 +207,6 @@ footer li a {
     transform: translateY(0) scale(1);
   }
 }
-
 #lieu {
   height: 50px;
   display: flex;
@@ -377,23 +377,6 @@ hr {
   align-items: center;
   visibility: hidden;
   animation: loading-disparition 2.5s linear 0s 1;
-  -webkit-animation: loading-disparition 2.5s linear 0s 1;
-}
-@keyframes loading-disparition {
-  0% {
-    visibility: visible;
-  }
-  90% {
-    opacity: 0.9;
-  }
-  95% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
 }
 #loading div {
   display: flex;
@@ -419,6 +402,22 @@ hr {
   }
 }
 
+@keyframes loading-disparition {
+  0% {
+    visibility: visible;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023.76px) {
   #expo-fonct {
     display: flex;
@@ -505,7 +504,7 @@ hr {
 .main {
   position: relative;
   margin-top: -57px;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
   background-color: #F6F6F6;
   width: 100%;
   padding: 20px 0px 40px 0px;
@@ -603,9 +602,10 @@ hr {
     height: 600px;
   }
   .main {
-    margin-right: 192px;
-    margin-left: 193px;
     width: auto;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,7 +617,7 @@ hr {
     right: -40px;
   }
   .main__article {
-    width: 600px;
+    width: 634px;
     overflow: hidden;
   }
 }
@@ -645,6 +645,7 @@ hr {
   opacity: 1;
   animation: progress-heart-fadeIn 1.5s forwards;
 }
+
 @keyframes progress-heart-fadeIn {
   0% {
     transform: scale(0.1);
