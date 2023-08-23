@@ -183,6 +183,15 @@ hr {
     }
 }
 
+.btn-explor {
+    display: flex;
+    justify-content: center;
+    padding: 13px 18.75px 13px 18.75px;
+    align-items: center;
+    height: 25px;
+    @include bouton;
+}
+
 @keyframes loading-disparition {
     0% {
         visibility: visible;

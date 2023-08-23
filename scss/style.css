@@ -83,71 +83,6 @@ footer li a {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  padding: 16px 49px 16px 49px;
-  border-radius: 25px;
-  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  width: 100px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-.btn:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 0px 30px 15px rgba(255, 255, 255, 0.8);
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.btn:hover::before {
-  opacity: 1;
-}
-
-.btn-explor {
-  display: flex;
-  justify-content: center;
-  padding: 13px 18.75px 13px 18.75px;
-  border-radius: 25px;
-  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  align-items: center;
-  height: 25px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-.btn-explor:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 0px 30px 15px rgba(255, 255, 255, 0.8);
-}
-.btn-explor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.btn-explor:hover::before {
-  opacity: 1;
-}
-
 .main__article:nth-child(2) {
   animation: fadeIn1 1s forwards;
 }
@@ -393,6 +328,39 @@ hr {
   animation: loading-rotation 2.5s linear 0s 1;
 }
 
+.btn-explor {
+  display: flex;
+  justify-content: center;
+  padding: 13px 18.75px 13px 18.75px;
+  align-items: center;
+  height: 25px;
+  border-radius: 25px;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.btn-explor:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 0px 30px 15px rgba(255, 255, 255, 0.8);
+}
+.btn-explor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-explor:hover::before {
+  opacity: 1;
+}
+
 @keyframes loading-disparition {
   0% {
     visibility: visible;
@@ -593,6 +561,38 @@ hr {
 }
 .main > .btn {
   margin-top: 40px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 16px 49px 16px 49px;
+  width: 100px;
+  border-radius: 25px;
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0px 0px 30px 15px rgba(255, 255, 255, 0.8);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn:hover::before {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {
